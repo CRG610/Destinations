@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top 10 Bucket List Destinations</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #c8d1ff url('https://www.transparenttextures.com/patterns/grey-jean.png');
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background-color: #e6ccff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      border-radius: 0 0 10px 10px;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      flex: 1;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav button {
+      padding: 0.5rem 1rem;
+      background-color: #b2f0e8;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 12px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    nav button:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    main {
+      max-width: 1000px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      margin: 2rem auto;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+
+    iframe {
+      border-radius: 12px;
+      width: 100%;
+      max-width: 800px;
+      height: 450px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #e6ccff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      width: 100%;
+      max-width: 1000px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Bucketlist.png" alt="Bucket Logo" class="logo" />
+    <h1>Top 10 Bucket List Destinations</h1>
+    <nav>
+      <a href="index.html"><button>Home</button></a>
+      <a href="destinations.html"><button>Destinations</button></a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Must-Visit Wonders Around the World</h2>
+    <p>Explore the world’s most awe-inspiring places - from ancient cities to breathtaking natural landscapes - each one a dream waiting to be experienced.</p>
+    <iframe width="800" height="400" src="https://www.youtube.com/embed/eLPVDaaQybY?si=MjUAlmD4UxkBn8ir"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </main>
+
+  <footer>
+    <p>© 2025 Bucket List Explorer</p>
+  </footer>
+</body>
+</html>

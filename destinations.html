@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top 10 Bucket List Destinations</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #c8d1ff url('https://www.transparenttextures.com/patterns/grey-jean.png');
+      color: #222;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background-color: #e6ccff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      flex: 1;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav button {
+      padding: 0.5rem 1rem;
+      background-color: #b2f0e8;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 12px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    nav button:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .destination {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      gap: 2rem;
+    }
+
+    .destination img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .destination h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 0.5rem 1rem;
+      background-color: #b2f0e8;
+      border: none;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .back-to-top:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Bucketlist.png" alt="Bucket Logo" class="logo" />
+    <h1>Top 10 Destinations</h1>
+    <nav>
+      <a href="index.html"><button>Home</button></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="destination">
+      <img src="Peru.jpg" alt="Machu Picchu">
+      <div>
+        <h2>Machu Picchu, Peru</h2>
+        <p>An ancient city nestled in the Andes, showcasing the glory of Incan civilization.</p>
+      </div>
+    </section>
+    <section class="destination">
+      <img src="Greece.webp" alt="Santorini">
+      <div>
+        <h2>Santorini, Greece</h2>
+        <p>Charming white houses, volcanic beaches, and iconic sunsets by the sea.</p>
+      </div>
+    </section>
+    <section class="destination">
+      <img src="Japan.jpg" alt="Kyoto">
+      <div>
+        <h2>Kyoto, Japan</h2>
+        <p>Step into a serene world of temples, gardens, and cherry blossoms.</p>
+      </div>
+    </section>
+    <section class="destination">
+      <img src="Canada.webp" alt="Banff">
+      <div>
+        <h2>Banff National Park, Canada</h2>
+        <p>Marvel at crystal lakes and alpine peaks in this outdoor paradise.</p>
+      </div>
+    </section>
+    <section class="destination">
+      <img src="Southafrica.webp" alt="Cape Town">
+      <div>
+        <h2>Cape Town, South Africa</h2>
+        <p>Dynamic culture and breathtaking scenery surround Table Mountain.</p>
+      </div>
+    </section>
+    <section class="destination">
+      <img src="Jordan.avif" alt="Petra">
+      <div>
+        <h2>Petra, Jordan</h2>
+        <p>Discover a city carved from rose-red rock, hidden for centuries.</p>
+      </div>
+    </section>
+    <section class="destination">
+      <img src="Paris.jpg" alt="Paris">
+      <div>
+        <h2>Paris, France</h2>
+        <p>Elegant streets, timeless fashion, and the glitter of the Eiffel Tower.</p>
+      </div>
+    </section>
+    <section class="destination">
+      <img src="NZ.jpg" alt="Queenstown">
+      <div>
+        <h2>Queenstown, New Zealand</h2>
+        <p>Adventure capital boasting lakes, mountains, and thrilling activities.</p>
+      </div>
+    </section>
+    <section class="destination">
+      <img src="Iceland.jpg" alt="Reykjavik">
+      <div>
+        <h2>Reykjavik, Iceland</h2>
+        <p>Explore northern lights, geothermal wonders, and icy beauty.</p>
+      </div>
+    </section>
+    <section class="destination">
+      <img src="Bali.jpg" alt="Bali">
+      <div>
+        <h2>Bali, Indonesia</h2>
+        <p>Tropical vibes meet cultural depth in this island haven.</p>
+      </div>
+    </section>
+  </main>
+
+  <button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">↑ Back to Top</button>
+</body>
+</html>
